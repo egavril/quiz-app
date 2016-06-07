@@ -11,6 +11,13 @@ body * {
 	border: 1px solid red;
 }
 
+div {
+	width: 30%;
+	float: left;
+	padding-left: 1rem;
+	padding-right: 2.5rem;
+}
+
 /* top section */
 
 header {
@@ -28,7 +35,6 @@ header {
 
 .questions, .answers {
 	margin: 0 auto;
-	width: 30%;
 }
 
 .questions {
@@ -39,7 +45,7 @@ header {
 
 .answers {
 	font-size: 1.5rem;
-	width: 15%;
+	width: 75%;
 }
 
 .answers ul li {
@@ -76,7 +82,7 @@ header {
 
 .progress {
 	text-align: center;
-	width: 30%;
+
 	float: left;
 }
 
