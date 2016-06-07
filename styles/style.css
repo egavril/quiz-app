@@ -1,0 +1,98 @@
+html {
+ 	box-sizing: border-box;
+}
+
+body {
+	background-color: white;
+	font-family: sans-serif;
+}
+
+body * {
+	border: 1px solid red;
+}
+
+/* top section */
+
+header {
+	height: 10rem;
+	text-align: center;
+	overflow: auto;
+}
+
+.quiz-name {
+	padding-top: 5rem;
+	font-size: 4rem;
+}
+
+/* q and a section */
+
+.questions, .answers {
+	margin: 0 auto;
+	width: 30%;
+}
+
+.questions {
+	padding: 3rem 0 3rem 0;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.answers {
+	font-size: 1.5rem;
+	width: 15%;
+}
+
+.answers ul li {
+	display: block;
+	text-align: center;
+	margin-top: 1rem;
+	padding: .4rem 0 .4rem 0;
+	background-color: #7FC5DC;
+	color: white;
+}
+
+/* answer feedback & next button */ 
+
+.answer-feedback {
+	margin: 0 auto;
+	text-align: center;
+	padding: 2rem 0 2rem 0;
+	font-size: 2rem;
+}
+
+.next-button {
+	display: inline-block;
+	text-align: center;
+    text-decoration: none;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 24px;
+    padding: .4rem 1.5rem;
+    margin-top: 2rem;
+}
+
+/* left side */
+
+.progress {
+	text-align: center;
+	width: 30%;
+	float: left;
+}
+
+/* initially hidden elements */
+#q2, #q3, #q4, #q5 {
+	display: none;
+}
+
+.answers2, .answers3, .answers4, .answers5 {
+	display: none;
+}
+
+#wrong {
+	display: none;
+}
+
+.results {
+	display: none;
+}
