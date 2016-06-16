@@ -15,90 +15,50 @@
 		<h1 class="quiz-name">The Alpine Quiz</h1>
 	</header>
 
-	<div class="left">
+	<div class="quiz-progress">
 
 		<section class="progress">
-			<p>Question <span id="question-number"></span> of 5</p>
+			<p>Question <span class="question-number"></span> of 5</p>
 		</section>
 
 	</div>
 
-	<div class="center">
+	<div class="quiz-content">
 
-		<section class="questions">
-			<h2 id="q1">Question 1</h2>
-			<h2 id="q2">Question 2</h2>
-			<h2 id="q3">Question 3</h2>
-			<h2 id="q4">Question 4</h2>
-			<h2 id="q5">Question 5</h2>
+		<section class="questions-section">
+			<h2 class="questions"></h2>
 		</section>
 
-		<section class="answers">
+		<section class="answers-section">
 
-			<ul class="answers1">
-				<li>Answer 1</li>
-				<li>Answer 2</li>
-				<li>Answer 3</li>
-				<li>Answer 4</li>
-				<li>Answer 5</li>
-			</ul>
+			<ul class="answers">
 
-			<ul class="answers2">
-				<li>Answer 1</li>
-				<li>Answer 2</li>
-				<li>Answer 3</li>
-				<li>Answer 4</li>
-				<li>Answer 5</li>
-			</ul>
-
-			<ul class="answers3">
-				<li>Answer 1</li>
-				<li>Answer 2</li>
-				<li>Answer 3</li>
-				<li>Answer 4</li>
-				<li>Answer 5</li>
-			</ul>
-
-			<ul class="answers4">
-				<li>Answer 1</li>
-				<li>Answer 2</li>
-				<li>Answer 3</li>
-				<li>Answer 4</li>
-				<li>Answer 5</li>
-			</ul>
-
-			<ul class="answers5">
-				<li>Answer 1</li>
-				<li>Answer 2</li>
-				<li>Answer 3</li>
-				<li>Answer 4</li>
-				<li>Answer 5</li>
 			</ul>	
 
 		</section>
 
 		<section class="results">
-			<h1 id="five-of-five">Perfect! You're a real <i>alpiniste</i>!</h1>
-			<h1 id="four-of-five">4 out of 5! Almost to the summit!</h1>
-			<h1 id="three-of-five">3 out of 5. It's a slog, but you're getting there.</h1>
-			<h1 id="two-of-five">2 out of 5. Maybe you should've stayed back at basecamp!</h1>
-			<h1 id="one-of-five">1 out of 5. No way I'm going up there with you!</h1>
-			<h1 id="zero-of-five">Ze mountains...yew were not made for zem.</h1>
+			<h1 class="five-of-five">Perfect! You're a real <i>alpiniste</i>!</h1>
+			<h1 class="four-of-five">4 out of 5! Almost to the summit!</h1>
+			<h1 class="three-of-five">3 out of 5. It's a slog, but you're getting there.</h1>
+			<h1 class="two-of-five">2 out of 5. Maybe you should've stayed back at basecamp!</h1>
+			<h1 class="one-of-five">1 out of 5. No way I'm going up there with you!</h1>
+			<h1 class="zero-of-five">Ze mountains...yew were not made for zem.</h1>
 		</section>	
 
 	<section class="answer-feedback">
-		<h2 id="correct"><b>Correct!</b> Click Next to move along.</h2>
-		<h2 id="wrong"><b>Not so</b>. Click Next to move along.</h2>
+		<h2 class="correct"><b>Correct!</b> Click Next to move along.</h2>
+		<h2 class="wrong"><b>Not so</b>. Click Next to move along.</h2>
 		<button type="button" class="next-button">Next</button>
 	</section>		
 
 	</div>
 
-	<div class="right">
+	<div class="quiz-images">
 
 		<section class="reference-image">
-			<img src="" alt="" id="">
-			<img src="" alt="" id="">
+			<img src="" alt="" class="">
+			<img src="" alt="" class="">
 		</section>
 
 	</div>
@@ -107,6 +67,9 @@
 	<footer></footer>
 
 
+	<!-- JS -->
+
+	<script type="text/javascript" src="js/app.js"></script>
 
 </body>
 

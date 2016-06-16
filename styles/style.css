@@ -7,15 +7,13 @@ body {
 	font-family: sans-serif;
 }
 
-body * {
+/**body * {
 	border: 1px solid red;
-}
+}*/
 
 div {
 	width: 30%;
 	float: left;
-	padding-left: 1rem;
-	padding-right: 2.5rem;
 }
 
 /* top section */
@@ -32,6 +30,10 @@ header {
 }
 
 /* q and a section */
+
+.quiz-content {
+	padding-left: 1rem;
+}
 
 .questions, .answers {
 	margin: 0 auto;
@@ -57,6 +59,11 @@ header {
 	color: white;
 }
 
+.answers li:hover {
+	cursor: pointer;
+	background-color: #43AACC;
+}
+
 /* answer feedback & next button */ 
 
 .answer-feedback {
@@ -79,15 +86,27 @@ header {
 }
 
 /* left side */
+.quiz-progress {
+	text-align: center;
+	padding-right: 2%;
+	padding-left: 2%;
+}
 
 .progress {
-	text-align: center;
 
-	float: left;
+}
+
+/* right side */
+
+.quiz-images {
+	text-align: center;
+	float: right;
+	padding-right: 2%;
+	padding-left: 2%;
 }
 
 /* initially hidden elements */
-#q2, #q3, #q4, #q5 {
+.q2, .q3, .q4, .q5 {
 	display: none;
 }
 
@@ -95,10 +114,18 @@ header {
 	display: none;
 }
 
-#wrong {
+.wrong {
+	display: none;
+}
+
+.correct {
 	display: none;
 }
 
 .results {
+	display: none;
+}
+
+.next-button {
 	display: none;
 }
