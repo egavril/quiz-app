@@ -3,26 +3,61 @@ html {
 }
 
 body {
-	background-color: white;
-	font-family: sans-serif;
+	background-color: #e5e5e5;
+  font-family: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-/**body * {
+/*body * {
 	border: 1px solid red;
 }*/
 
-div {
+body div {
 	width: 30%;
 	float: left;
 }
 
 /* top section */
 
-header {
-	height: 10rem;
-	text-align: center;
+.masthead {
+	height: 20rem;
 	overflow: auto;
+	background-image: url('https://c1.staticflickr.com/1/722/20742278756_7ff949e1cc_k.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -40px;
 }
+
+.masthead-heading,
+.masthead-heading2 {
+  font-family: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 6em;
+ 
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 3px 3px 3px #7F7F7F;
+}
+
+.masthead-heading {
+	float: left;
+	position: absolute;
+	z-index: 10;
+	top: 39px;
+	left: 144px;
+}
+
+.masthead-heading2 {
+	float: left;
+	position: absolute;
+	z-index: 10;
+	top: 127px;
+	left: 618px;
+}
+
+.stripe {
+	height: 10px;
+	background: #7F7F7F;
+}
+
 
 .quiz-name {
 	padding-top: 5rem;
@@ -35,33 +70,48 @@ header {
 	padding-left: 1rem;
 }
 
-.questions, .answers {
+.question-answer-section {
 	margin: 0 auto;
+	width: 85%;
 }
 
-.questions {
-	padding: 3rem 0 3rem 0;
+.list {
+	margin-top: 1rem;
+	height: 28rem;
+	background-color: #e5e5e5;
+}
+
+.list h1 {
+	padding: 2rem 0 1.5rem 0;
+	border-bottom: solid #7F7F7F;
+	border-bottom-width: 2px;
 	font-size: 2rem;
 	text-align: center;
 }
 
-.answers {
-	font-size: 1.5rem;
-	width: 75%;
+.list ul {
+	padding-top: 1rem;
+	padding-bottom: .5rem;
 }
 
-.answers ul li {
-	display: block;
+.list li ul li {
+	display: flex;
+	justify-content: center;
 	text-align: center;
-	margin-top: 1rem;
-	padding: .4rem 0 .4rem 0;
-	background-color: #7FC5DC;
+	flex-direction: column;
+	padding: .3rem 0 .3rem 0;
+	background-color: #7F7F7F;
 	color: white;
+	height: 2rem;
+	width: 95%;
+	margin: 1.2rem auto;
+
+	border-radius: 5px;
 }
 
-.answers li:hover {
+.question-answer-section li ul li:hover {
 	cursor: pointer;
-	background-color: #43AACC;
+	background-color: black;
 }
 
 /* answer feedback & next button */ 
@@ -74,26 +124,57 @@ header {
 }
 
 .next-button {
-	display: inline-block;
+	display: block;
+  margin: 0 auto;
 	text-align: center;
-    text-decoration: none;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    font-size: 24px;
-    padding: .4rem 1.5rem;
-    margin-top: 2rem;
+  text-decoration: none;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 24px;
+  padding: .4rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 5px;
 }
 
 /* left side */
+
 .quiz-progress {
-	text-align: center;
 	padding-right: 2%;
 	padding-left: 2%;
 }
 
-.progress {
+.progress li {
+	font-size: 18px;
+	padding-bottom: .5rem;
+	padding-left: 4rem;
+}
 
+.question-count {
+	padding-top: 2.5rem;
+}
+
+.mountain {
+	background-image: linear-gradient(to top, black 0%,  #e5e5e5 100%), url('../styles/images/mountains_grey.jpg');
+	background-size: 614px 425px;
+	width: 614px;
+	height: 425px;
+	float: left;
+	position: absolute;
+	z-index: 10;
+	top: 435px;
+  background-blend-mode: lighten;
+}
+
+.climber {
+	background-image: url('../styles/images/climber_small.png');
+	width: 50px;
+	height: 92px;
+	float: left;
+	position: absolute;
+	z-index: 10;
+	top: 765px;
+	left: 122px;
 }
 
 /* right side */
@@ -116,16 +197,34 @@ header {
 
 .wrong {
 	display: none;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 24px;
+  color: red;
 }
 
-.correct {
+.right {
 	display: none;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 24px;
+  color: green;
 }
 
-.results {
+.five, .four, .three, .two, .one, .zero {
 	display: none;
+	margin: 0 auto;
+  text-align: center;
+  font-size: 36px;	
+  padding-top: 10rem;
 }
 
 .next-button {
 	display: none;
 }
+
+.feedback-section {
+  text-align: center;
+  margin: auto;
+}
+

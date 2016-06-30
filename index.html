@@ -1,56 +1,74 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
 	<title>Alpine Quiz</title>
 	<meta charset="UTF-8">
+
 <!-- Stylesheets -->
+
 	<link rel="stylesheet" href="styles/reset.css">
-	<link rel="stylesheet" href="styles/style.css"/> 	
+	<link rel="stylesheet" href="styles/style.css"/>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<!-- Script -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+	<script src="http://code.jquery.com/ui/jquery-ui-git.js"></script>
 </head>
 
 <body>
 
 	<header>
-		<h1 class="quiz-name">The Alpine Quiz</h1>
+		<section class="masthead">
+		<h1 class="masthead-heading">The Alpine</h1>
+		<h1 class="masthead-heading2">Quiz</h1>
+		</section>
+		<section class="stripe"></section>
 	</header>
+	
+
 
 	<div class="quiz-progress">
 
 		<section class="progress">
-			<p>Question <span class="question-number"></span> of 5</p>
+
+		<ul>
+			<li class="question-count">Question <span class="question-number">1</span> of 5</li>
+			<li>Correct answers: <span class="correct-number">0</span></li>
+		</ul>
+
+			<div class="progress-images">
+
+				<div class="mountain"></div>
+				<div class="climber"></div>
+
+			</div>
+
 		</section>
 
 	</div>
 
 	<div class="quiz-content">
 
-		<section class="questions-section">
-			<h2 class="questions"></h2>
-		</section>
+	<section class="question-answer-section">
+      <ul class="list"></ul>
+	</section>
 
-		<section class="answers-section">
+	<section class="results">
+		<h1 class="five">Perfect! You're a real <i>alpiniste</i>! But beware, most deaths occur on the descent.</h1>
+		<h1 class="four">4 out of 5! Almost to the summit.</h1>
+		<h1 class="three">3 out of 5. It's a slog, but you're getting there.</h1>
+		<h1 class="two">2 out of 5. Maybe you should've stayed back at basecamp.</h1>
+		<h1 class="one">1 out of 5. No way I'm going up there with you!</h1>
+		<h1 class="zero">0 of 5. Don't even poke your head above sea level.</h1>
+	</section>	
 
-			<ul class="answers">
-
-			</ul>	
-
-		</section>
-
-		<section class="results">
-			<h1 class="five-of-five">Perfect! You're a real <i>alpiniste</i>!</h1>
-			<h1 class="four-of-five">4 out of 5! Almost to the summit!</h1>
-			<h1 class="three-of-five">3 out of 5. It's a slog, but you're getting there.</h1>
-			<h1 class="two-of-five">2 out of 5. Maybe you should've stayed back at basecamp!</h1>
-			<h1 class="one-of-five">1 out of 5. No way I'm going up there with you!</h1>
-			<h1 class="zero-of-five">Ze mountains...yew were not made for zem.</h1>
-		</section>	
-
-	<section class="answer-feedback">
-		<h2 class="correct"><b>Correct!</b> Click Next to move along.</h2>
-		<h2 class="wrong"><b>Not so</b>. Click Next to move along.</h2>
-		<button type="button" class="next-button">Next</button>
-	</section>		
+    <section class='feedback-section'>
+	  	<h2 class="right"><b>Correct!</b></h2>
+	  	<h2 class="wrong"><b>Not so</b>.</h2>
+	  	<button type="button" class="next-button"><span class="button-text">Next Question</span></button>
+    </section>
 
 	</div>
 
