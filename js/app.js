@@ -8,7 +8,7 @@ var MAINJSON = [
   "All alone"], 
   "correct": 1 },
 
-  { "question": "Question 2?", "choices": ["Answer 1b", "Answer 2", "Answer 3", "Answer 4", "Answer 5"], "correct": 4 },
+  { "question": "What is the topographic feature shown on the map typically called?", "choices": ["Hanging valley", "Basin or bowl", "Crevasse", "Buttress", "Col or notch"], "correct": 4 },
 
   { "question": "Question 3?", "choices": ["Answer 1c", "Answer 2", "Answer 3", "Answer 4", "Answer 5"], "correct": 1 },
 
@@ -100,6 +100,14 @@ $(document).ready(function() {
      	if (buttonClicks == MAINJSON.length) {
 	     quizScore();
 	    }
+      
+ //reference image display
+      if (counter == 2) {
+        $('.reference-image-1').show();
+      }
+      if (counter != 2) {
+        $('.reference-image-1').hide();
+      }      
     });
 
     function clickCount() {   

@@ -181,7 +181,7 @@ body div {
 
 .quiz-images {
 	text-align: center;
-	float: right;
+  padding-top: 11rem;
 	padding-right: 2%;
 	padding-left: 2%;
 }
@@ -193,6 +193,12 @@ body div {
 
 .answers2, .answers3, .answers4, .answers5 {
 	display: none;
+}
+
+.reference-image-1 {
+  display: none;
+  border: 2px solid #7F7F7F;
+  border-radius: 8px;
 }
 
 .wrong {
